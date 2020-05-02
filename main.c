@@ -535,7 +535,10 @@ void save_report()
 	size = order_count();
 	order* order_list[MAX_SIZE];
 	get_all_order(order_list); // 저장되어 있는 모든 주문정보를 이전에 선언한 배열 order_list로 가져옴
-	
+        if(order_count()==0){
+          printf("No record!\n");
+          return;
+         }	
 	// 주문리스트를 출력
     fputs("--------------------------------------------------------------------------------------------------------------\n", f);
 	fputs("                                     <The List of Order Information>\n", f);
@@ -612,7 +615,10 @@ void show_report()
 	size = order_count();
 	order* order_list[MAX_SIZE];
 	get_all_order(order_list); // 저장되어 있는 모든 주문정보를 이전에 선언한 배열 order_list로 가져옴
-	
+if(size ==0){
+  printf("There is no record!\n");
+  return;
+}	
 	// 주문리스트를 출력
     printf("--------------------------------------------------------------------------------------------------------------\n\n");
     printf("                                           <Order list Report>\n\n");
