@@ -536,7 +536,7 @@ void save_report()
 	order* order_list[MAX_SIZE];
 	get_all_order(order_list); // 저장되어 있는 모든 주문정보를 이전에 선언한 배열 order_list로 가져옴
         if(size==0){
-          printf("No record!\n");
+          printf("There is no record!\n");
           return;
          }	
 	// 주문리스트를 출력
