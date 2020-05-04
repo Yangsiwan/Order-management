@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define SIZE 100     // redability 향상을 위한 부분
-#define MAX_SIZE 100  // 저장할 수 있는 최대 주문정보의 수
+#define MAX_SIZE 101  // 저장할 수 있는 최대 주문정보의 수
 
 typedef struct _orders
 {
