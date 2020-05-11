@@ -401,7 +401,7 @@ char* order_to_string_save(order* p)
 int total_margin()
 {
     int sum = 0; // 모든 청구금액에 대한 합산값을 저장
-    for(int i=0 ; i<_count ; i++)
+    for(int i=0 ; i<MAX_SIZE ; i++)
 	{
 		if(list[i] == NULL) // 조각모음을 하지 않은 경우 발생할 오류를 방지하기 위한부분
 			continue;
@@ -417,7 +417,7 @@ int total_margin()
 int total_count()
 {
 	int sum = 0; // 모든 주문수량에 대한 합산 값을 저장
-	for(int i=0 ; i<_count ; i++)
+	for(int i=0 ; i<MAX_SIZE ; i++)
 	{
 		if(list[i] == NULL) // 조각모음을 하지 않은 경우 발생할 수 있는 오류를 막기위한 부분
 			continue;

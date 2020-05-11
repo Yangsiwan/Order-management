@@ -797,6 +797,7 @@ void delete_record()
 	}
 	order_delete(p); // 주문정보 삭제
 	printf("Success! : delete is complete\n"); // 삭제완료 시 메시지 출력
+	printf("If you want to use all function of this program, you have to use arrange function(option12)\n");
 }
 
 void arrange()
